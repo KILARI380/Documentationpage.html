@@ -1,0 +1,167 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Survey Form</title>
+  
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label"for="name"> Name: <input id="name" name="first-name" type="text" required placeholder="enter your name"/></label>
+      <label id="email-label" for="email"> Email: <input id="email" name="email" type="email" required placeholder="Email"/></label>
+      <label id="number-label" for="number">Age (Optional): <input id="number" name="Age(optional)" type="number" min="3" max="5" required placeholder ="Age"/></label>
+    </fieldset>
+    <fieldset>
+      <legend>Which option best describes your current role?</legend>
+      <select id="dropdown" name="dropdown">
+        <option value="">select current role</option>
+            <option value="Student Full Time Job">freeCodeCamp News</option>
+            <option value="Full Time Learner">freeCodeCamp YouTube Channel</option>
+            <option value="Prefer Not To Say">freeCodeCamp Forum</option>
+            <option value="Others">Other</option>
+            </select>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend freeCodeCamp to a friend? (required)</legend>
+      <label for="Definitely"><input id="Definitely" type="radio" name="Would you recommend freeCodeCamp to a friend?" value="Definitely" class="inline" checked /> Definitely</label>
+      <label for="Maybe"><input id="Maybe" type="radio" name="Would you recommend freeCodeCamp to a friend?" class="inline" value="Maybe"/> Maybe</label>
+      <label for="Not Sure"><input id="Not Sure" type="radio" name="Would you recommend freeCodeCamp to a friend?" class="inline" value="Not Sure"/> Not Sure</label>
+    </fieldset>
+    <fieldset>
+      <legend>What is your favorite feature of freeCodeCamp?</legend>
+      <select id="option" name="option">
+        <option value="">select an option</option>
+            <option value="Challenges">freeCodeCamp News</option>
+            <option value="Projects">freeCodeCamp YouTube Channel</option>
+            <option value="Community">freeCodeCamp Forum</option>
+            <option value="Open Source">Other</option>
+            </select>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <label for="Front-end Projects"><input id="Front-end Projects" type="checkbox" name="Front-end Projects" class="inline" value="Front-end Projects" /> Front-end Projects</label>
+      <label for="Back-end Projects"><input id="Back-end Projectss" type="checkbox" name="Back-end Projects" class="inline" value="Back-end Projects" /> Back-end Projects</label>
+      <label for="Data Visualization"><input id="Data Visualization" type="checkbox" name="Data Visualization" class="inline" value="Data Visualization"/> Data Visualization</label>
+      <label for="Challenges"><input id="Challenges" type="checkbox" name="Challenges" class="inline" value="challenges"/> Challenges</label>
+      <label for="Open Source Community"><input id="Open Source Community" type="checkbox" name="Open Source Community" class="inline" value="Open Source Community"/> Open Source Community</label>
+      <label for="Gitter help rooms"><input id="Gitter help rooms" type="checkbox" name="Gitter help rooms" class="inline" value="Gitter help rooms"/> Gitter help rooms</label>
+      <label for="Videos"><input id="Videos" type="checkbox" name="Videos" class="inline" value="videos"/> Videos</label>
+      <label for="City Meetups"><input id="City Meetups" type="checkbox" name="City Meetups" class="inline" value="City Meetups"/> City Meetups</label>
+      <label for="Wiki"><input id="Wiki" type="checkbox" name="Wiki" class="inline" value="Wiki"/> Wiki</label>
+      <label for="Forum"><input id="Forum" type="checkbox" name="Forum" class="inline" value="Forum"/> Forum</label>
+      <label for="Additional Courses"><input id="Additional Courses" type="checkbox" name="Additional Courses" class="inline" value="Additional Courses"/> Additional Courses</label>
+      <fieldset>
+        <label <for="bio">Any Comments or Suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="enter your comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit">Submit
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: 'Tohama', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 100;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+ 
+}
+
+p {
+  font-size: 1.125rem;
+}
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align : center;
+  background-color : grey;
+}
+form {
+  background: silver;
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+input,
+button,
+select {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+}
+button {
+  border: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  min-width : 300px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: Green;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline{
+  display: inline; 
+}
+
+** end of undefined **
+
